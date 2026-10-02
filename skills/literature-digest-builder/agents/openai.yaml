@@ -1,0 +1,7 @@
+interface:
+  display_name: "Literature Digest Builder"
+  short_description: "Build a personal recurring scholarly literature digest"
+  default_prompt: "Use $literature-digest-builder to turn my research direction into a deployable daily literature email skill."
+policy:
+  allow_implicit_invocation: true
+

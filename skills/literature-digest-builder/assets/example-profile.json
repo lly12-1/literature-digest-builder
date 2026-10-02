@@ -1,0 +1,48 @@
+{
+  "profile_id": "immunology-digest",
+  "display_name": "Immunology Daily Literature Digest",
+  "repository": "OWNER/zotero-arxiv-daily",
+  "receiver_secret": "IMMUNOLOGY_RECEIVER",
+  "language": "English",
+  "max_papers": 30,
+  "min_sjr": 1.5,
+  "lookback_days": 7,
+  "entry_lookback_days": 14,
+  "retmax": 500,
+  "send_empty": true,
+  "core_journals_bypass_topic": true,
+  "pubmed_query": "(\"Immune System Diseases\"[Mesh] OR immunology[Title/Abstract])",
+  "topic_keywords": ["immune", "immunology", "inflammation"],
+  "ranking_profile": ["Adaptive and innate immunity, immune regulation, inflammation, and translational immunology."],
+  "priority_topics": [],
+  "publication_types": {
+    "exclude": ["Editorial", "Comment", "Letter", "News"],
+    "core_allow": ["Review", "Systematic Review", "Meta-Analysis"],
+    "priority_allow": ["Review", "Systematic Review", "Meta-Analysis"]
+  },
+  "sources": {
+    "arxiv_enabled": true,
+    "arxiv_categories": ["q-bio.CB", "q-bio.MN"],
+    "biorxiv_enabled": true,
+    "biorxiv_categories": ["immunology", "cell biology"],
+    "medrxiv_enabled": true,
+    "medrxiv_categories": ["immunology", "infectious diseases"]
+  },
+  "schedule": {
+    "timezone": "Asia/Shanghai",
+    "primary_cron_utc": "30 22 * * *",
+    "fallback_cron_utc": "0 23 * * *",
+    "local_time_note": "06:30 primary, 07:00 fallback"
+  },
+  "journals": [
+    {
+      "name": "Journal of Experimental Medicine",
+      "aliases": ["J Exp Med"],
+      "sjr": 1.5,
+      "quartile": "Q1",
+      "year": 2025,
+      "source_url": "https://www.scimagojr.com/",
+      "core": true
+    }
+  ]
+}
